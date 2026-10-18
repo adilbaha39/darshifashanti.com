@@ -1,24 +1,58 @@
 import type { MetadataRoute } from "next";
-import { posts } from "@/lib/posts";
+import { locales } from "@/i18n/config";
+import { articles } from "@/lib/blog-content";
+import { roomSlugs } from "@/lib/rooms";
+import { SITE_URL } from "@/lib/site";
 
-const baseUrl = "https://darshifashanti.com";
+const staticPaths = [
+  { path: "", priority: 1, changeFrequency: "weekly" as const, lastMod: "2026-03-15" },
+  { path: "/chambres", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-03-15" },
+  { path: "/experiences", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-03-15" },
+  { path: "/blog", priority: 0.85, changeFrequency: "weekly" as const, lastMod: "2026-03-15" },
+  { path: "/a-propos", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-03-15" },
+  { path: "/contact", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-03-15" },
+];
+
+function langs(path: string) {
+  return Object.fromEntries(locales.map((l) => [l, `${SITE_URL}/${l}${path}`]));
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages: MetadataRoute.Sitemap = [
-    { url: baseUrl, lastModified: "2026-03-15", changeFrequency: "weekly", priority: 1 },
-    { url: `${baseUrl}/chambres`, lastModified: "2026-03-15", changeFrequency: "monthly", priority: 0.9 },
-    { url: `${baseUrl}/experiences`, lastModified: "2026-03-15", changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/blog`, lastModified: "2026-03-15", changeFrequency: "weekly", priority: 0.85 },
-    { url: `${baseUrl}/a-propos`, lastModified: "2026-03-15", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/contact`, lastModified: "2026-03-15", changeFrequency: "monthly", priority: 0.9 },
-  ];
+  const entries: MetadataRoute.Sitemap = [];
 
-  const blogPosts: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.date,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  for (const locale of locales) {
+    for (const item of staticPaths) {
+      entries.push({
+        url: `${SITE_URL}/${locale}${item.path}`,
+        lastModified: item.lastMod,
+        changeFrequency: item.changeFrequency,
+        priority: item.priority,
+        alternates: { languages: langs(item.path) },
+      });
+    }
 
-  return [...staticPages, ...blogPosts];
+    for (const slug of roomSlugs) {
+      const path = `/chambres/${slug}`;
+      entries.push({
+        url: `${SITE_URL}/${locale}${path}`,
+        lastModified: "2026-03-15",
+        changeFrequency: "monthly",
+        priority: 0.8,
+        alternates: { languages: langs(path) },
+      });
+    }
+
+    for (const post of articles) {
+      const path = `/blog/${post.slug}`;
+      entries.push({
+        url: `${SITE_URL}/${locale}${path}`,
+        lastModified: post.date,
+        changeFrequency: "monthly",
+        priority: 0.65,
+        alternates: { languages: langs(path) },
+      });
+    }
+  }
+
+  return entries;
 }
