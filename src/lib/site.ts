@@ -2,7 +2,7 @@
  * Site configuration — confirm domain and local details with the owner.
  * Coordinates and exact street address are marked for verification.
  */
-export const SITE_URL = "https://darshifashanti.com";
+export const SITE_URL = "https://www.darshifashanti.com";
 export const SITE_NAME = "Dar Shifa Shanti";
 
 export const BUSINESS = {

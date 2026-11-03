@@ -134,6 +134,19 @@ export default async function ArticlePage({
                 </ul>
               );
             }
+            if (section.type === "img" && section.src) {
+              return (
+                <figure key={i} className="my-8 relative aspect-[16/10] rounded-lg overflow-hidden">
+                  <Image
+                    src={section.src}
+                    alt={section.alt || article.title[locale]}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 720px"
+                  />
+                </figure>
+              );
+            }
             return <p key={i}>{section.text}</p>;
           })}
 

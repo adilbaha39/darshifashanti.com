@@ -1,9 +1,11 @@
 import type { Locale } from "@/i18n/config";
 
 export type BlogSection = {
-  type: "p" | "h2" | "ul";
+  type: "p" | "h2" | "ul" | "img";
   text?: string;
   items?: string[];
+  src?: string;
+  alt?: string;
 };
 
 export type BlogArticle = {
@@ -601,20 +603,621 @@ export const articles: BlogArticle[] = [
       es: "← Volver al blog",
     },
   },
+  {
+    slug: "ou-manger-a-merzouga",
+    image: "/images/blog-tagine.webp",
+    date: "2026-11-01",
+    dateLabel: {
+      fr: "1 novembre 2026",
+      en: "1 November 2026",
+      ar: "1 نوفمبر 2026",
+      es: "1 de noviembre de 2026",
+    },
+    readingTime: {
+      fr: "8 min de lecture",
+      en: "8 min read",
+      ar: "8 دقائق قراءة",
+      es: "8 min de lectura",
+    },
+    kicker: {
+      fr: "Guide pratique",
+      en: "Practical guide",
+      ar: "دليل عملي",
+      es: "Guía práctica",
+    },
+    title: {
+      fr: "Où manger à Merzouga : 7 restaurants à tester",
+      en: "Where to eat in Merzouga: 7 restaurant types to try",
+      ar: "أين تأكل في مرزوكة: 7 أنواع مطاعم للتجربة",
+      es: "Dónde comer en Merzouga: 7 tipos de restaurantes",
+    },
+    excerpt: {
+      fr: "Où manger à Merzouga sans piège à touristes ? Critères concrets, profils d'adresses, plats locaux et astuces budget près de l'Erg Chebbi.",
+      en: "Where to eat in Merzouga without tourist traps? Practical criteria, types of places, local dishes and budget tips near Erg Chebbi.",
+      ar: "أين تأكل في مرزوكة دون الوقوع في فخ السياح؟ معايير عملية وأنواع أماكن وأطباق محلية ونصائح للميزانية قرب إرغ شبي.",
+      es: "¿Dónde comer en Merzouga sin trampas para turistas? Criterios prácticos, tipos de locales, platos locales y consejos de presupuesto cerca del Erg Chebbi.",
+    },
+    metaDescription: {
+      fr: "Où manger à Merzouga quand on dort en maison d'hôtes ? Repérez les meilleurs restaurants Merzouga et savourez la cuisine locale. Réservez.",
+      en: "Where to eat in Merzouga when staying in a guesthouse? Find reliable restaurants and local cuisine near Erg Chebbi. Book your stay.",
+      ar: "أين تأكل في مرزوكة أثناء إقامتك في دار ضيافة؟ اكتشف المطاعم الموثوقة والمطبخ المحلي قرب إرغ شبي.",
+      es: "¿Dónde comer en Merzouga si se aloja en una casa de huéspedes? Descubra restaurantes fiables y cocina local cerca del Erg Chebbi.",
+    },
+    sections: {
+      fr: [
+        {
+          type: "p",
+          text: "Vous avez réservé votre excursion dans les dunes, votre chambre, et il ne reste qu'une question : où manger à Merzouga sans tomber dans le piège à touristes ni payer trois fois le prix d'un tajine ? Entre les menus affichés en cinq langues, les adresses sans prix clair et les terrasses vides à l'heure du repas, le casse-tête est bien réel.",
+        },
+        {
+          type: "p",
+          text: "Cet article ne vous donne pas une liste de noms inventés ou de fausses notes. Son objectif est plus utile : vous proposer des critères concrets, des profils d'adresses et des repères de budget pour savoir où manger à Merzouga en toute confiance.",
+        },
+        {
+          type: "p",
+          text: "Petite précision honnête : les « 7 restaurants à tester » sont présentés comme des profils types. Le voyageur vérifie les noms, horaires et emplacements sur place. Les prix et les cartes changent vite dans le désert.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-breakfast-dunes.webp",
+          alt: "Petit-déjeuner marocain avec vue sur les dunes de l'Erg Chebbi",
+        },
+        { type: "h2", text: "Comment choisir où manger à Merzouga : les critères qui comptent" },
+        { type: "h2", text: "Observer la clientèle locale" },
+        {
+          type: "p",
+          text: "Un lieu où mangent des habitants et des travailleurs locaux est souvent un bon signe. À l'inverse, une salle vide avec un rabatteur devant la porte doit vous faire réfléchir. Demandez conseil à votre hébergement, sans forcément réserver chez lui : l'astuce marche presque toujours.",
+        },
+        { type: "h2", text: "Vérifier les prix avant de s'installer" },
+        {
+          type: "p",
+          text: "Cherchez une carte ou un menu avec prix affichés. Demandez le prix du plat et de la boisson avant de commander. Comparez deux ou trois adresses autour de la place ou de la rue principale : l'écart peut être surprenant.",
+        },
+        { type: "h2", text: "Miser sur une carte courte et fraîche" },
+        {
+          type: "p",
+          text: "Une carte limitée indique souvent des produits préparés du jour. Repérez les plats du jour, les grillades préparées devant vous, les légumes visibles. Évitez les cartes immenses qui mélangent pizza, sushi et tajine.",
+        },
+        { type: "h2", text: "Tenir compte de l'emplacement" },
+        {
+          type: "p",
+          text: "Près d'Erg Chebbi, les restaurants peuvent être plus chers à cause de la logistique. Dans le village, les adresses simples restent plus abordables. Pensez à la distance à pied ou en voiture selon l'heure et la saison.",
+        },
+        { type: "h2", text: "Types d'adresses : village, hôtel, café simple" },
+        {
+          type: "p",
+          text: "Les restaurants de village offrent de petites salles familiales, un service simple et une cuisine locale idéale pour découvrir la cuisine de tous les jours à prix doux. Vérifiez l'hygiène visible et demandez ce qui est disponible le jour même.",
+        },
+        {
+          type: "p",
+          text: "Les restaurants d'hôtel sont pratiques après une excursion ou pour un repas sans stress. Souvent plus chers et moins typiques, mais plus confortables. Vérifiez si le repas est inclus dans une formule ou facturé à part.",
+        },
+        {
+          type: "p",
+          text: "Les cafés simples conviennent pour un thé à la menthe, un jus, une soupe ou un en-cas. Budget accessible, ambiance locale. Demandez ce qui est réellement servi le jour même.",
+        },
+        { type: "h2", text: "Les 7 profils de restaurants à tester à Merzouga" },
+        {
+          type: "p",
+          text: "Il s'agit de profils pour guider votre recherche, pas de noms inventés. Notez l'adresse exacte sur place.",
+        },
+        {
+          type: "ul",
+          items: [
+            "Le restaurant de village tenu en famille — petite salle simple, tajine du jour ou brochettes, prix demandé avant de s'installer.",
+            "La table de quartier sans chichi — fréquentée par les habitants, carte courte, couscous du vendredi ou harira.",
+            "Le café simple pour un déjeuner léger — thé à la menthe, msemen, omelette ou soupe entre deux visites.",
+            "Le restaurant d'hôtel pratique — utile après Erg Chebbi ; comparez le menu avec le village.",
+            "La terrasse avec vue sur les dunes — souvent plus chère ; vérifiez prix et horaires, réservez en haute saison.",
+            "L'adresse de cuisine berbère authentique — plats mijotés, galettes maison ; demandez composition et temps d'attente.",
+            "Le spot petit budget — brochettes, sandwichs ou plat du jour ; espèces et monnaie à vérifier.",
+          ],
+        },
+        { type: "h2", text: "Plats typiques à goûter pour savoir où manger à Merzouga" },
+        {
+          type: "p",
+          text: "Le tajine (légumes, poulet, kefta, poisson selon arrivage) reste la base. Demandez s'il est préparé à la commande. Le couscous est souvent servi le vendredi. Le mechoui se commande parfois pour un groupe. Le thé à la menthe accompagne repas et pauses. Harira, msemen, omelette et brochettes conviennent pour un déjeuner léger et un budget maîtrisé.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-mint-tea.webp",
+          alt: "Thé à la menthe servi dans des verres traditionnels",
+        },
+        {
+          type: "img",
+          src: "/images/blog-harira.webp",
+          alt: "Harira et salade marocaine, repas simple du quotidien",
+        },
+        { type: "h2", text: "Pièges à éviter quand on cherche où manger à Merzouga" },
+        {
+          type: "ul",
+          items: [
+            "Menus « touristiques » en plusieurs langues sans prix clair",
+            "Rabatteurs insistants devant les restaurants",
+            "Addition avec suppléments non annoncés",
+            "Photos de plats qui ne correspondent pas à l'assiette",
+            "Adresses vides à l'heure du repas, sans clients locaux",
+            "Pourboires réclamés agressivement",
+          ],
+        },
+        {
+          type: "p",
+          text: "Demandez le prix, vérifiez la monnaie et évitez les lieux sans carte visible.",
+        },
+        { type: "h2", text: "Astuces budget pour bien manger à Merzouga" },
+        {
+          type: "ul",
+          items: [
+            "Privilégiez le déjeuner pour tester une adresse moins chère qu'au dîner",
+            "Partagez un tajine ou commandez des entrées simples",
+            "Buvez de l'eau en bouteille scellée et limitez les sodas",
+            "Demandez le plat du jour plutôt que la carte complète",
+            "Prévoyez des espèces pour les petits cafés et restaurants de village",
+            "Comparez le prix d'un menu à l'hôtel et dans une adresse locale",
+            "Évitez les terrasses les plus touristiques aux heures de pointe",
+          ],
+        },
+        { type: "h2", text: "Séjour au calme et repas locaux : l'option maison d'hôtes près des dunes" },
+        {
+          type: "p",
+          text: "Une maison d'hôtes tranquille comme Dar Shifa Shanti, près d'Erg Chebbi, peut vous aider à identifier des adresses simples et fiables. L'équipe connaît souvent les restaurants ouverts, les plats du jour et les prix pratiqués. Cela évite de tourner en voiture ou de tomber sur une adresse uniquement touristique.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-terrace-dinner.webp",
+          alt: "Dîner en terrasse près des dunes de Merzouga au coucher du soleil",
+        },
+        {
+          type: "p",
+          text: "Demandez conseil à l'arrivée, sans obligation de manger sur place. Vérifiez si un dîner local peut être préparé sur demande et à quel prix. Précisez allergies, budget et horaire. Alternez repas au village, pique-nique léger et dîner en maison d'hôtes.",
+        },
+        { type: "h2", text: "Conclusion — Où manger à Merzouga avec confiance" },
+        {
+          type: "p",
+          text: "Retenez les critères clés : prix affichés, clientèle locale, carte courte et hygiène visible. Testez les sept profils d'adresses sans chercher à tout prix un nom célèbre, et vérifiez sur place noms, horaires et emplacements : cet article donne une méthode, pas une liste figée.",
+        },
+        {
+          type: "p",
+          text: "Pour un séjour au calme près d'Erg Chebbi, une maison d'hôtes qui conseille sur la cuisine locale reste un atout. Découvrez les chambres de Dar Shifa Shanti et contactez-nous pour organiser vos repas et répondre à la question « où manger à Merzouga » sans mauvaise surprise.",
+        },
+      ],
+      en: [
+        {
+          type: "p",
+          text: "You've booked your desert excursion and your room, and only one question remains: where to eat in Merzouga without falling into the tourist trap or paying three times the price of a tajine? Between menus in several languages, places with no clear prices, and empty terraces at mealtime, the puzzle is real.",
+        },
+        {
+          type: "p",
+          text: "This article does not give a list of made-up names or fake reviews. Its goal is more useful: concrete criteria, profiles of places, and budget tips so you know where to eat in Merzouga with confidence.",
+        },
+        {
+          type: "p",
+          text: "Honest clarification: the \"7 restaurants to try\" are typical profiles, not fixed names. Verify names, opening hours, and locations on site. Prices and menus change quickly in the desert.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-breakfast-dunes.webp",
+          alt: "Moroccan breakfast with a view of the Erg Chebbi dunes",
+        },
+        { type: "h2", text: "How to choose where to eat in Merzouga: criteria that matter" },
+        { type: "h2", text: "Observe the local clientele" },
+        {
+          type: "p",
+          text: "A place where locals and workers eat is usually a good sign. An empty room with someone hustling customers at the door should make you think twice. Ask your accommodation for advice without feeling obliged to eat there.",
+        },
+        { type: "h2", text: "Check prices before sitting down" },
+        {
+          type: "p",
+          text: "Look for a menu with displayed prices. Ask the price of the dish and the drink before ordering. Compare two or three places around the square or main street: the difference can be surprising.",
+        },
+        { type: "h2", text: "Go for a short, fresh menu" },
+        {
+          type: "p",
+          text: "A limited menu often means food prepared that day. Look for dishes of the day, grills prepared in front of you, and visible vegetables. Avoid huge menus that mix pizza, sushi, and tajine.",
+        },
+        { type: "h2", text: "Take location into account" },
+        {
+          type: "p",
+          text: "Near Erg Chebbi, restaurants can be more expensive due to logistics. In the village, simple places are usually more affordable. Consider distance on foot or by car depending on the time and season.",
+        },
+        { type: "h2", text: "Types of places: village, hotel, simple café" },
+        {
+          type: "p",
+          text: "Village restaurants: small family rooms, simple service, and local cuisine ideal for everyday cooking at a reasonable price. Check visible hygiene and ask what is available that day.",
+        },
+        {
+          type: "p",
+          text: "Hotel restaurants: practical after an excursion or for a stress-free meal; often more expensive and less typical, but more comfortable. Check whether the meal is included in a package or billed separately.",
+        },
+        {
+          type: "p",
+          text: "Simple cafés: perfect for mint tea, juice, soup, or a snack, with an affordable budget and local atmosphere. Ask what is actually served that day.",
+        },
+        { type: "h2", text: "The 7 restaurant profiles to try in Merzouga" },
+        {
+          type: "p",
+          text: "These are profiles to guide your search, not invented names. Note the exact address on site.",
+        },
+        {
+          type: "ul",
+          items: [
+            "Family-run village restaurant — simple room and visible kitchen; tajine of the day or skewers; ask the price before sitting down.",
+            "No-frills neighborhood table — locals, short menu; Friday couscous or harira.",
+            "Simple café for a light lunch — mint tea, msemen, omelette, or soup between visits or before the dunes.",
+            "Practical hotel restaurant — useful after Erg Chebbi; compare the menu with the village.",
+            "Terrace with a view of the dunes — often more expensive; check prices and hours; book in high season.",
+            "Authentic Berber cuisine — slow-cooked dishes and local products; ask about ingredients and waiting time.",
+            "Budget spot — skewers, sandwich, or dish of the day; pay in cash and ask for change.",
+          ],
+        },
+        { type: "h2", text: "Typical dishes to try when deciding where to eat in Merzouga" },
+        {
+          type: "p",
+          text: "Tajine (vegetables, chicken, kefta, fish depending on supply) is the staple; ask if it is prepared to order. Couscous is often served on Fridays. Mechoui is sometimes ordered for a group. Mint tea goes with meals and breaks. Harira, msemen, omelette, and skewers suit a light lunch and a controlled budget.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-mint-tea.webp",
+          alt: "Moroccan mint tea in traditional glasses",
+        },
+        {
+          type: "img",
+          src: "/images/blog-harira.webp",
+          alt: "Harira soup and Moroccan salad, simple everyday meal",
+        },
+        { type: "h2", text: "Traps to avoid when looking for where to eat in Merzouga" },
+        {
+          type: "ul",
+          items: [
+            "\"Tourist\" menus in several languages with no clear price",
+            "Pushy people hustling customers in front of restaurants",
+            "Bills that climb with unannounced extras",
+            "Photos of dishes that do not match the plate served",
+            "Empty places at mealtime with no local customers",
+            "Tips demanded aggressively",
+          ],
+        },
+        {
+          type: "p",
+          text: "Ask the price, check the change, and avoid places with no visible menu.",
+        },
+        { type: "h2", text: "Budget tips for eating well in Merzouga" },
+        {
+          type: "ul",
+          items: [
+            "Favor lunch to try a cheaper place than at dinner",
+            "Share a tajine or order simple starters",
+            "Drink sealed bottled water and limit sodas",
+            "Ask for the dish of the day instead of the full menu",
+            "Bring cash for small cafés and village restaurants",
+            "Compare a hotel menu with a local place",
+            "Avoid the most touristy terraces at peak times",
+          ],
+        },
+        { type: "h2", text: "Quiet stay and local meals: the guesthouse option near the dunes" },
+        {
+          type: "p",
+          text: "A quiet guesthouse like Dar Shifa Shanti, near Erg Chebbi, can help you identify simple and reliable places. The team often knows which restaurants are open, the dishes of the day, and typical prices, which avoids driving around or ending up at a tourist-only address.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-terrace-dinner.webp",
+          alt: "Dinner on a terrace near the Merzouga dunes at sunset",
+        },
+        {
+          type: "p",
+          text: "Ask for advice on arrival with no obligation to eat there. Check whether a local dinner can be prepared on request and at what price. Specify allergies, budget, and timing. Alternate village meals, a light picnic, and dinner at the guesthouse, and respect local customs.",
+        },
+        { type: "h2", text: "Conclusion — Where to eat in Merzouga with confidence" },
+        {
+          type: "p",
+          text: "Remember the key criteria: displayed prices, local clientele, short menu, and visible hygiene. Try the seven profiles without chasing a famous name at all costs, and verify names, hours, and locations on site. This article offers a method, not a fixed list.",
+        },
+        {
+          type: "p",
+          text: "For a quiet stay near Erg Chebbi, a guesthouse that advises on local cuisine is a real plus. Discover the rooms at Dar Shifa Shanti and contact us: we will help you organize your meals and answer \"where to eat in Merzouga\" without bad surprises.",
+        },
+      ],
+      ar: [
+        {
+          type: "p",
+          text: "حجزت رحلتك إلى الكثبان وغرفتك، ولم يبقَ سوى سؤال واحد: أين تأكل في مرزوكة دون الوقوع في فخ السياح أو دفع ثلاثة أضعاف ثمن طاجين؟ بين قوائم معروضة بعدة لغات، وعناوين دون أسعار واضحة، وشرفات فارغة وقت الوجبة، يصبح الأمر حيرة حقيقية.",
+        },
+        {
+          type: "p",
+          text: "هذا المقال لا يقدّم قائمة أسماء مختلقة أو تقييمات وهمية. هدفه أن يمنحك معايير ملموسة وأنماط أماكن ومراجع للميزانية لتعرف أين تأكل في مرزوكة بثقة.",
+        },
+        {
+          type: "p",
+          text: "توضيح مهم: «المطاعم السبعة» هنا أنماط وليست أسماء محددة. تحقق من الأسماء والمواعيد والمواقع على عين المكان؛ فالأسعار والقوائم تتغير بسرعة في الصحراء.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-breakfast-dunes.webp",
+          alt: "فطور مغربي مع إطلالة على كثبان إرغ شبي",
+        },
+        { type: "h2", text: "كيف تختار أين تأكل في مرزوكة: المعايير المهمة" },
+        { type: "h2", text: "راقب الزبائن المحليين" },
+        {
+          type: "p",
+          text: "المكان الذي يأكل فيه السكان والعمال المحليون غالبًا علامة جيدة. أما القاعة الفارغة مع من يستجلب الزبائن أمام الباب فتستدعي الحذر. اطلب نصيحة من مكان إقامتك دون إلزام بالأكل عنده.",
+        },
+        { type: "h2", text: "تحقق من الأسعار قبل الجلوس" },
+        {
+          type: "p",
+          text: "ابحث عن قائمة بأسعار معروضة. اسأل عن سعر الطبق والمشروب قبل الطلب. قارن عنوانين أو ثلاثة حول الساحة أو الشارع الرئيسي؛ الفرق قد يكون مفاجئًا.",
+        },
+        { type: "h2", text: "اعتمد قائمة قصيرة وطازجة" },
+        {
+          type: "p",
+          text: "القائمة المحدودة تشير غالبًا إلى منتجات تُحضَّر في اليوم نفسه. لاحظ أطباق اليوم والمشويات أمامك والخضروات الظاهرة. تجنب القوائم الضخمة التي تخلط البيتزا والسوشي والطاجين.",
+        },
+        { type: "h2", text: "راعِ الموقع" },
+        {
+          type: "p",
+          text: "قرب إرغ شبي قد تكون المطاعم أغلى بسبب النقل. في القرية تبقى الأماكن البسيطة أرخص. فكّر في المسافة سيرًا أو بالسيارة حسب الوقت والموسم.",
+        },
+        { type: "h2", text: "أنواع الأماكن: القرية، الفندق، المقهى البسيط" },
+        {
+          type: "p",
+          text: "مطاعم القرية: قاعات عائلية صغيرة وخدمة بسيطة ومطبخ محلي مناسب لاكتشاف طعام الحياة اليومية بأسعار معقولة. تحقق من النظافة الظاهرة واسأل عما هو متوفر في اليوم نفسه.",
+        },
+        {
+          type: "p",
+          text: "مطاعم الفنادق: عملية بعد رحلة أو لوجبة دون قلق، وغالباً أغلى وأقل أصالة لكنها أكثر راحة. تحقق إن كانت الوجبة مشمولة في عرض أم تُحسب منفصلة.",
+        },
+        {
+          type: "p",
+          text: "المقاهي البسيطة: مناسبة لشاي بالنعناع أو عصير أو حساء أو وجبة خفيفة، بميزانية في المتناول وأجواء محلية. اسأل عما يُقدَّم فعليًا في ذلك اليوم.",
+        },
+        { type: "h2", text: "الأنماط السبعة للمطاعم في مرزوكة" },
+        {
+          type: "p",
+          text: "هذه أنماط لإرشاد بحثك وليست أسماء مختلقة. دوّن العنوان الدقيق على عين المكان.",
+        },
+        {
+          type: "ul",
+          items: [
+            "مطعم قرية تديره عائلة — قاعة بسيطة ومطبخ ظاهر؛ اطلب طاجين اليوم أو أسياخًا واسأل عن السعر قبل الجلوس.",
+            "طاولة الحي دون تكلّف — يرتادها السكان، قائمة قصيرة؛ مناسبة لكسكس الجمعة أو الحريرة.",
+            "مقهى بسيط لغداء خفيف — شاي بالنعناع، مسمن، أومليت أو حساء بين زيارتين أو قبل الكثبان.",
+            "مطعم فندق عملي — مفيد بعد إرغ شبي؛ قارن سعر المنيو مع القرية.",
+            "شرفة تطل على الكثبان — غالبًا أغلى؛ تحقق من الأسعار والمواعيد واحجز في الموسم المرتفع.",
+            "مطبخ أمازيغي أصيل — أطباق مطهوة ببطء ومنتجات محلية؛ اسأل عن المكونات ووقت الانتظار.",
+            "خيار الميزانية الصغيرة — أسياخ أو سندويش أو طبق اليوم؛ ادفع نقدًا واطلب الباقي.",
+          ],
+        },
+        { type: "h2", text: "أطباق تقليدية تساعدك على معرفة أين تأكل في مرزوكة" },
+        {
+          type: "p",
+          text: "الطاجين (خضروات، دجاج، كفتة، سمك حسب التوريد) أساس المائدة؛ اسأل إن كان يُحضَّر عند الطلب. الكسكس غالبًا يوم الجمعة. المشوي قد يُطلب لمجموعة. الشاي بالنعناع يرافق الوجبات والاستراحات. الحريرة والمسمن والأومليت والأسياخ مناسبة لغداء خفيف وميزانية مضبوطة.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-mint-tea.webp",
+          alt: "شاي بالنعناع في كؤوس تقليدية",
+        },
+        {
+          type: "img",
+          src: "/images/blog-harira.webp",
+          alt: "حريرة وسلطة مغربية، وجبة يومية بسيطة",
+        },
+        { type: "h2", text: "فخاخ يجب تجنبها عند البحث عن أين تأكل في مرزوكة" },
+        {
+          type: "ul",
+          items: [
+            "قوائم «سياحية» بعدة لغات دون سعر واضح",
+            "من يلحّ في استجلاب الزبائن أمام المطعم",
+            "فاتورة بإضافات غير معلنة",
+            "صور أطباق لا تطابق ما يُقدَّم",
+            "أماكن فارغة وقت الوجبة دون زبائن محليين",
+            "إكراميات تُطلب بإلحاح مفرط",
+          ],
+        },
+        {
+          type: "p",
+          text: "اسأل عن السعر، تحقق من الباقي، وتجنب الأماكن دون قائمة ظاهرة.",
+        },
+        { type: "h2", text: "نصائح الميزانية للأكل الجيد في مرزوكة" },
+        {
+          type: "ul",
+          items: [
+            "فضّل الغداء لتجربة مكان أرخص من العشاء",
+            "شارك طاجينًا أو اطلب مقبلات بسيطة",
+            "اشرب ماءً في قنينة مغلقة وقلل المشروبات الغازية",
+            "اطلب طبق اليوم بدل القائمة الكاملة",
+            "جهّز نقدًا للمقاهي الصغيرة ومطاعم القرية",
+            "قارن سعر منيو الفندق مع عنوان محلي",
+            "تجنب الشرفات الأقرب للنقاط السياحية في ساعات الذروة",
+          ],
+        },
+        { type: "h2", text: "إقامة هادئة ووجبات محلية: دار الضيافة قرب الكثبان" },
+        {
+          type: "p",
+          text: "دار ضيافة هادئة مثل دار شفاء شانتي قرب إرغ شبي يمكنها مساعدتك في تحديد أماكن بسيطة وموثوقة. الفريق غالبًا يعرف المطاعم المفتوحة وأطباق اليوم والأسعار، فيجنّبك الدوران أو الوقوع على عنوان سياحي فقط.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-terrace-dinner.webp",
+          alt: "عشاء على الشرفة قرب كثبان مرزوكة عند الغروب",
+        },
+        {
+          type: "p",
+          text: "اطلب النصيحة عند الوصول دون إلزام بالأكل في المكان. تحقق إن أمكن تحضير عشاء محلي بالطلب وبأي سعر. حدّد الحساسية والميزانية والوقت. نوّع بين القرية ونزهة خفيفة وعشاء في دار الضيافة، مع احترام العادات المحلية.",
+        },
+        { type: "h2", text: "خاتمة — أين تأكل في مرزوكة بثقة" },
+        {
+          type: "p",
+          text: "تذكّر المعايير: أسعار معروضة، زبائن محليون، قائمة قصيرة، ونظافة ظاهرة. جرّب الأنماط السبعة دون الإصرار على اسم شهير، وتحقق على عين المكان من الأسماء والمواعيد والمواقع. هذا المقال منهج وليس قائمة ثابتة.",
+        },
+        {
+          type: "p",
+          text: "للاستمتاع بإقامة هادئة قرب إرغ شبي، دار ضيافة تنصحك حول المطبخ المحلي مفيدة. اكتشف غرف دار شفاء شانتي وتواصل معنا لنساعدك في تنظيم وجباتك والإجابة عن «أين تأكل في مرزوكة» دون مفاجآت سيئة.",
+        },
+      ],
+      es: [
+        {
+          type: "p",
+          text: "Has reservado tu excursión a las dunas y tu habitación, y solo queda una pregunta: ¿dónde comer en Merzouga sin caer en la trampa turística ni pagar tres veces el precio de un tajine? Entre menús en varios idiomas, lugares sin precios claros y terrazas vacías a la hora de comer, el dilema es real.",
+        },
+        {
+          type: "p",
+          text: "Este artículo no ofrece una lista de nombres inventados ni reseñas falsas. Su objetivo es darte criterios concretos, perfiles de locales y referencias de presupuesto para saber dónde comer en Merzouga con confianza.",
+        },
+        {
+          type: "p",
+          text: "Aclaración importante: los «7 restaurantes» son perfiles tipo, no nombres fijos. Verifica en el lugar nombres, horarios y ubicaciones; precios y cartas cambian rápido en el desierto.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-breakfast-dunes.webp",
+          alt: "Desayuno marroquí con vistas a las dunas del Erg Chebbi",
+        },
+        { type: "h2", text: "Cómo elegir dónde comer en Merzouga: criterios que importan" },
+        { type: "h2", text: "Observa a los clientes locales" },
+        {
+          type: "p",
+          text: "Un lugar donde comen habitantes y trabajadores locales suele ser buena señal. Una sala vacía con alguien que capta clientes en la puerta debe hacerte dudar. Pide consejo a tu alojamiento sin obligarte a comer allí.",
+        },
+        { type: "h2", text: "Verifica los precios antes de sentarte" },
+        {
+          type: "p",
+          text: "Busca una carta con precios visibles. Pregunta el precio del plato y de la bebida antes de pedir. Compara dos o tres locales cerca de la plaza o la calle principal: la diferencia puede sorprender.",
+        },
+        { type: "h2", text: "Apuesta por una carta corta y fresca" },
+        {
+          type: "p",
+          text: "Una carta limitada suele indicar productos del día. Fíjate en platos del día, parrillas a la vista y verduras visibles. Evita cartas enormes que mezclan pizza, sushi y tajine.",
+        },
+        { type: "h2", text: "Ten en cuenta la ubicación" },
+        {
+          type: "p",
+          text: "Cerca de Erg Chebbi los restaurantes pueden ser más caros por la logística. En el pueblo, los locales sencillos suelen ser más asequibles. Valora la distancia a pie o en coche según la hora y la temporada.",
+        },
+        { type: "h2", text: "Tipos de lugares: pueblo, hotel, café sencillo" },
+        {
+          type: "p",
+          text: "Restaurantes de pueblo: salas familiares pequeñas, servicio sencillo y cocina local ideal para comer como en el día a día a precio moderado. Comprueba la higiene visible y pregunta qué hay ese día.",
+        },
+        {
+          type: "p",
+          text: "Restaurantes de hotel: prácticos tras una excursión o para comer sin estrés; a menudo más caros y menos típicos, pero más cómodos. Comprueba si la comida está incluida o se cobra aparte.",
+        },
+        {
+          type: "p",
+          text: "Cafés sencillos: perfectos para té con menta, zumo, sopa o un tentempié, con presupuesto accesible y ambiente local. Pregunta qué se sirve realmente ese día.",
+        },
+        { type: "h2", text: "Los 7 perfiles de restaurantes en Merzouga" },
+        {
+          type: "p",
+          text: "Son perfiles para guiar tu búsqueda, no nombres inventados. Anota la dirección exacta en el lugar.",
+        },
+        {
+          type: "ul",
+          items: [
+            "Restaurante de pueblo familiar — sala sencilla y cocina visible; tajine del día o brochetas; pregunta el precio antes de sentarte.",
+            "Mesa de barrio sin pretensiones — clientes locales, carta corta; cuscús del viernes o harira.",
+            "Café sencillo para almuerzo ligero — té con menta, msemen, tortilla o sopa entre visitas o antes de las dunas.",
+            "Restaurante de hotel práctico — útil tras Erg Chebbi; compara el menú con el pueblo.",
+            "Terraza con vistas a las dunas — a menudo más cara; verifica precios y horarios; reserva en temporada alta.",
+            "Cocina bereber auténtica — guisos lentos y productos locales; pregunta ingredientes y tiempo de espera.",
+            "Opción de bajo presupuesto — brochetas, bocadillo o plato del día; paga en efectivo y pide el cambio.",
+          ],
+        },
+        { type: "h2", text: "Platos típicos para saber dónde comer en Merzouga" },
+        {
+          type: "p",
+          text: "El tajine (verduras, pollo, kefta, pescado según suministro) es la base; pregunta si se prepara al momento. El cuscús suele servirse los viernes. El mechoui a veces se encarga para un grupo. El té con menta acompaña comidas y pausas. Harira, msemen, tortilla y brochetas van bien para un almuerzo ligero y un presupuesto controlado.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-mint-tea.webp",
+          alt: "Té con menta en vasos tradicionales",
+        },
+        {
+          type: "img",
+          src: "/images/blog-harira.webp",
+          alt: "Harira y ensalada marroquí, comida sencilla del día a día",
+        },
+        { type: "h2", text: "Trampas a evitar al buscar dónde comer en Merzouga" },
+        {
+          type: "ul",
+          items: [
+            "Menús «turísticos» en varios idiomas sin precio claro",
+            "Personas insistentes que captan clientes frente al local",
+            "Cuenta con suplementos no anunciados",
+            "Fotos de platos que no coinciden con lo servido",
+            "Locales vacíos a la hora de comer sin clientes locales",
+            "Propinas reclamadas con agresividad",
+          ],
+        },
+        {
+          type: "p",
+          text: "Pregunta el precio, verifica el cambio y evita lugares sin carta visible.",
+        },
+        { type: "h2", text: "Consejos de presupuesto para comer bien en Merzouga" },
+        {
+          type: "ul",
+          items: [
+            "Prioriza el almuerzo para probar un local más barato que en la cena",
+            "Comparte un tajine o pide entrantes sencillos",
+            "Bebe agua en botella sellada y limita los refrescos",
+            "Pide el plato del día en lugar de la carta completa",
+            "Lleva efectivo para cafés pequeños y restaurantes de pueblo",
+            "Compara el menú del hotel con un local del pueblo",
+            "Evita las terrazas más turísticas en horas punta",
+          ],
+        },
+        { type: "h2", text: "Estancia tranquila y comidas locales: casa de huéspedes cerca de las dunas" },
+        {
+          type: "p",
+          text: "Una casa de huéspedes tranquila como Dar Shifa Shanti, cerca de Erg Chebbi, puede ayudarte a identificar locales sencillos y fiables. El equipo suele conocer restaurantes abiertos, platos del día y precios, y te evita dar vueltas o caer solo en opciones turísticas.",
+        },
+        {
+          type: "img",
+          src: "/images/blog-terrace-dinner.webp",
+          alt: "Cena en terraza cerca de las dunas de Merzouga al atardecer",
+        },
+        {
+          type: "p",
+          text: "Pide consejo a la llegada sin obligación de comer allí. Pregunta si se puede preparar una cena local por encargo y a qué precio. Indica alergias, presupuesto y horario. Alterna pueblo, picnic ligero y cena en la casa de huéspedes, respetando las costumbres locales.",
+        },
+        { type: "h2", text: "Conclusión — Dónde comer en Merzouga con confianza" },
+        {
+          type: "p",
+          text: "Recuerda los criterios: precios visibles, clientela local, carta corta e higiene visible. Prueba los siete perfiles sin buscar a toda costa un nombre famoso, y verifica en el lugar nombres, horarios y ubicaciones. Este artículo es un método, no una lista fija.",
+        },
+        {
+          type: "p",
+          text: "Para una estancia tranquila cerca de Erg Chebbi, una casa de huéspedes que aconseje sobre la cocina local es una ventaja. Descubre las habitaciones de Dar Shifa Shanti y contáctanos: te ayudaremos a organizar tus comidas y a responder «dónde comer en Merzouga» sin malas sorpresas.",
+        },
+      ],
+    },
+    ctaTitle: {
+      fr: "Séjournez près des dunes",
+      en: "Stay near the dunes",
+      ar: "أقم قرب الكثبان",
+      es: "Alojese cerca de las dunas",
+    },
+    ctaText: {
+      fr: "Dar Shifa Shanti vous accueille à Merzouga et peut vous orienter vers des adresses simples pour bien manger.",
+      en: "Dar Shifa Shanti welcomes you in Merzouga and can point you to simple places to eat well.",
+      ar: "دار شفاء شانتي ترحب بكم في مرزوكة ويمكنها توجيهكم لأماكن بسيطة لتناول طعام جيد.",
+      es: "Dar Shifa Shanti le recibe en Merzouga y puede orientarle hacia locales sencillos para comer bien.",
+    },
+    ctaButton: {
+      fr: "Nous contacter",
+      en: "Contact us",
+      ar: "تواصل معنا",
+      es: "Contáctenos",
+    },
+    backToBlog: {
+      fr: "← Retour au blog",
+      en: "← Back to blog",
+      ar: "→ العودة إلى المدونة",
+      es: "← Volver al blog",
+    },
+  },
 ];
 
-export function getArticle(slug: string) {
-  return articles.find((a) => a.slug === slug);
-}
-
-export function getPostsForLocale(locale: Locale) {
-  return articles.map((a) => ({
-    slug: a.slug,
-    title: a.title[locale],
-    excerpt: a.excerpt[locale],
-    date: a.date,
-    dateLabel: a.dateLabel[locale],
-    image: a.image,
-    readingTime: a.readingTime[locale],
-  }));
-}
+export function getArticle
