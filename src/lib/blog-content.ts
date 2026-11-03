@@ -1220,4 +1220,18 @@ export const articles: BlogArticle[] = [
   },
 ];
 
-export function getArticle
+export function getArticle(slug: string) {
+  return articles.find((a) => a.slug === slug);
+}
+
+export function getPostsForLocale(locale: Locale) {
+  return articles.map((a) => ({
+    slug: a.slug,
+    title: a.title[locale],
+    excerpt: a.excerpt[locale],
+    date: a.date,
+    dateLabel: a.dateLabel[locale],
+    image: a.image,
+    readingTime: a.readingTime[locale],
+  }));
+}
