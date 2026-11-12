@@ -1,8 +1,8 @@
 export const en = {
   meta: {
-    title: "Guesthouse in Merzouga | Dar Shifa Shanti",
+    title: "Merzouga Desert | Dar Shifa Shanti",
     description:
-      "Stay at Dar Shifa Shanti, an authentic guesthouse in Merzouga near the Erg Chebbi dunes. Traditional rooms and Sahara experiences.",
+      "Stay at Dar Shifa Shanti, a guesthouse near the Merzouga desert and Erg Chebbi dunes. Rooms, warm hospitality and Sahara experiences.",
     keywords:
       "Merzouga, Erg Chebbi, Merzouga guesthouse, Merzouga riad, Morocco desert, Sahara, Merzouga accommodation, Dar Shifa Shanti, desert stay Morocco",
   },
@@ -48,7 +48,7 @@ export const en = {
     ctaContact: "Contact us",
   },
   rooms: {
-    metaTitle: "Rooms in Merzouga | Dar Shifa Shanti",
+    metaTitle: "Merzouga Desert Camp | Rooms – Dar Shifa Shanti",
     metaDesc:
       "Discover our traditional rooms in Merzouga: Blue Room, Green Room, Desert Room and Suite.",
     heroTitle: "Our rooms",
@@ -62,7 +62,7 @@ export const en = {
     book: "Book",
   },
   experiences: {
-    metaTitle: "Desert experiences in Merzouga",
+    metaTitle: "Merzouga Desert Trip | Experiences – Dar Shifa Shanti",
     metaDesc:
       "Traditional breakfast, evenings under the stars and desert adventures in Merzouga.",
     heroTitle: "Experiences",
@@ -74,20 +74,20 @@ export const en = {
     gallery: "House moments",
   },
   about: {
-    metaTitle: "About Dar Shifa Shanti in Merzouga",
+    metaTitle: "About | Dar Shifa Shanti Guesthouse in Merzouga",
     metaDesc:
       "The story and philosophy of Dar Shifa Shanti, guesthouse in Merzouga.",
     heroTitle: "About",
     heroText: "A guesthouse born from love of the desert and hospitality.",
     philosophyTitle: "Our philosophy",
     philosophyText:
-      "Dar Shifa Shanti is a place of calm and authenticity. We welcome every traveler as a family guest, at the pace of the Sahara.",
+      "Dar Shifa Shanti is a place of calm and authenticity in Merzouga. We welcome every traveler as a family guest, at the pace of the Sahara. Our guesthouse combines traditional architecture, careful decoration and Berber hospitality for a restful stay near Erg Chebbi.",
     desertTitle: "In the heart of the Sahara",
     desertText:
-      "Located in Merzouga at the foot of Erg Chebbi, our house opens onto endless dunes and unforgettable sunsets.",
+      "Located in Merzouga at the foot of the Erg Chebbi dunes, Dar Shifa Shanti opens onto the endless dunes of the Moroccan Sahara. You can watch sunsets from the terrace, take a camel ride or organise an overnight bivouac in the desert. The house is an ideal base for exploring the region.",
   },
   contact: {
-    metaTitle: "Contact | Guesthouse in Merzouga",
+    metaTitle: "Contact & Booking | Guesthouse Merzouga – Dar Shifa Shanti",
     metaDesc: "Contact Dar Shifa Shanti in Merzouga to book your stay.",
     heroTitle: "Contact",
     heroText: "We are here to prepare your stay.",
@@ -98,7 +98,7 @@ export const en = {
     whatsapp: "Message on WhatsApp",
   },
   blog: {
-    metaTitle: "Merzouga & Erg Chebbi Blog | Travel tips",
+    metaTitle: "Merzouga Desert | Guides – Dar Shifa Shanti",
     metaDesc: "Guides and tips for visiting Merzouga and Erg Chebbi.",
     heroTitle: "Blog",
     heroText: "Tips, seasons and experiences around Merzouga.",

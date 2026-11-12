@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
 import { articles } from "@/lib/blog-content";
 import { roomSlugs } from "@/lib/rooms";
+import { services } from "@/lib/services";
 import { SITE_URL } from "@/lib/site";
 
 const staticPaths = [
@@ -38,6 +39,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: "2026-03-15",
         changeFrequency: "monthly",
         priority: 0.8,
+        alternates: { languages: langs(path) },
+      });
+    }
+
+    for (const svc of services) {
+      const path = `/experiences/${svc.slug}`;
+      entries.push({
+        url: `${SITE_URL}/${locale}${path}`,
+        lastModified: "2026-11-05",
+        changeFrequency: "monthly",
+        priority: 0.75,
         alternates: { languages: langs(path) },
       });
     }

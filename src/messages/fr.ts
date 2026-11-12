@@ -1,8 +1,8 @@
 export const fr = {
   meta: {
-    title: "Maison d'hôtes à Merzouga | Dar Shifa Shanti",
+    title: "Hotel à Merzouga | Dar Shifa Shanti",
     description:
-      "Séjournez à Dar Shifa Shanti, maison d'hôtes authentique à Merzouga près des dunes de l'Erg Chebbi. Chambres traditionnelles et expériences sahariennes.",
+      "Séjournez à Dar Shifa Shanti, maison d'hôtes près du désert de Merzouga et des dunes de l'Erg Chebbi. Chambres, hospitalité et expériences sahariennes.",
     keywords:
       "Merzouga, Erg Chebbi, maison d'hôtes Merzouga, riad Merzouga, désert Maroc, Sahara, hébergement Merzouga, Dar Shifa Shanti",
   },
@@ -48,7 +48,7 @@ export const fr = {
     ctaContact: "Nous contacter",
   },
   rooms: {
-    metaTitle: "Chambres à Merzouga | Dar Shifa Shanti",
+    metaTitle: "Desert de Merzouga | Chambres – Dar Shifa Shanti",
     metaDesc:
       "Découvrez les chambres de Dar Shifa Shanti à Merzouga : Blue Room, Green Room, Desert Room et Suite pour un séjour authentique près de l'Erg Chebbi.",
     heroTitle: "Nos chambres",
@@ -62,9 +62,9 @@ export const fr = {
     book: "Réserver",
   },
   experiences: {
-    metaTitle: "Expériences dans le désert de Merzouga",
+    metaTitle: "Désert de Merzouga | Expériences – Dar Shifa Shanti",
     metaDesc:
-      "Découvrez les expériences de Dar Shifa Shanti : petit-déjeuner marocain, soirées sous les étoiles, espaces traditionnels et aventures dans le désert.",
+      "Vivez le désert de Merzouga : balade à dos de chameau, soirées et expériences près de l'Erg Chebbi depuis Dar Shifa Shanti.",
     heroTitle: "Expériences",
     heroText: "Vivre le Sahara avec tous les sens.",
     breakfast: "Petit-déjeuner traditionnel",
@@ -74,21 +74,21 @@ export const fr = {
     gallery: "Moments de la maison",
   },
   about: {
-    metaTitle: "À propos de Dar Shifa Shanti à Merzouga",
+    metaTitle: "À propos | Maison d'hôtes Dar Shifa Shanti à Merzouga",
     metaDesc:
       "Découvrez l'histoire et la philosophie de Dar Shifa Shanti, une maison d'hôtes authentique située à Merzouga, au cœur du Sahara marocain.",
     heroTitle: "À propos",
     heroText: "Une maison d'hôtes née de l'amour du désert et de l'hospitalité.",
     philosophyTitle: "Notre philosophie",
     philosophyText:
-      "Dar Shifa Shanti est un lieu de calme et d'authenticité. Nous accueillons chaque voyageur comme un hôte de la famille, au rythme du Sahara.",
+      "Dar Shifa Shanti est un lieu de calme et d'authenticité à Merzouga. Nous accueillons chaque voyageur comme un hôte de la famille, au rythme du Sahara. Notre maison d'hôtes combine architecture traditionnelle, décoration soignée et hospitalité berbère pour offrir un séjour reposant près de l'Erg Chebbi.",
     desertTitle: "Au cœur du Sahara",
     desertText:
-      "Située à Merzouga, au pied de l'Erg Chebbi, notre maison ouvre sur les dunes infinies et les couchers de soleil inoubliables.",
+      "Située à Merzouga, au pied des dunes de l'Erg Chebbi, Dar Shifa Shanti ouvre sur les dunes infinies du Sahara marocain. Vous pouvez admirer les couchers de soleil depuis la terrasse, partir en balade à dos de chameau ou organiser une nuit en bivouac dans le désert. La maison est un point de départ idéal pour découvrir la région.",
   },
   contact: {
-    metaTitle: "Contact | Maison d'hôtes à Merzouga",
-    metaDesc: "Contactez Dar Shifa Shanti à Merzouga pour préparer votre séjour, vérifier les disponibilités et réserver votre chambre ou votre expérience saharienne.",
+    metaTitle: "Contact & réservation | Maison d'hôtes Merzouga – Dar Shifa Shanti",
+    metaDesc: "Contactez Dar Shifa Shanti à Merzouga pour réserver votre chambre ou une expérience dans le désert. Téléphone, WhatsApp et localisation.",
     heroTitle: "Contact",
     heroText: "Nous sommes là pour préparer votre séjour.",
     phone: "Téléphone / WhatsApp",
@@ -98,8 +98,8 @@ export const fr = {
     whatsapp: "Écrire sur WhatsApp",
   },
   blog: {
-    metaTitle: "Blog Merzouga et Erg Chebbi | Conseils de voyage",
-    metaDesc: "Guides et conseils pour visiter Merzouga, découvrir l'Erg Chebbi, choisir la meilleure saison et préparer une nuit dans le désert marocain.",
+    metaTitle: "Merzouga Maroc | Guides & Conseils – Dar Shifa Shanti",
+    metaDesc: "Guides pratiques sur Merzouga et le désert : saison, nuit sous les étoiles, où manger et conseils pour l'Erg Chebbi.",
     heroTitle: "Blog",
     heroText: "Conseils, saisons et expériences autour de Merzouga.",
     readMore: "Lire l'article →",

@@ -1,6 +1,6 @@
 export const es = {
   meta: {
-    title: "Casa de huéspedes en Merzouga | Dar Shifa Shanti",
+    title: "Excursión Desierto Merzouga | Dar Shifa Shanti",
     description:
       "Casa de huéspedes auténtica en Merzouga, al pie de las dunas del Erg Chebbi. Hospitalidad marroquí, habitaciones tradicionales y experiencias del Sahara inolvidables.",
     keywords:
@@ -48,7 +48,7 @@ export const es = {
     ctaContact: "Contáctenos",
   },
   rooms: {
-    metaTitle: "Habitaciones en Merzouga | Dar Shifa Shanti",
+    metaTitle: "Desierto Merzouga Mapa | Habitaciones – Dar Shifa Shanti",
     metaDesc:
       "Descubra nuestras habitaciones tradicionales en Merzouga: Blue Room, Green Room, Desert Room y Suite.",
     heroTitle: "Nuestras habitaciones",
@@ -62,7 +62,7 @@ export const es = {
     book: "Reservar",
   },
   experiences: {
-    metaTitle: "Experiencias en el desierto de Merzouga",
+    metaTitle: "Excursión Desierto Merzouga Noche | Experiencias – Dar Shifa Shanti",
     metaDesc:
       "Desayuno tradicional, veladas bajo las estrellas y aventuras en el desierto de Merzouga.",
     heroTitle: "Experiencias",
@@ -74,7 +74,7 @@ export const es = {
     gallery: "Momentos de la casa",
   },
   about: {
-    metaTitle: "Sobre Dar Shifa Shanti en Merzouga",
+    metaTitle: "Sobre nosotros | Casa de huéspedes Dar Shifa Shanti en Merzouga",
     metaDesc:
       "La historia y la filosofía de Dar Shifa Shanti, casa de huéspedes en Merzouga.",
     heroTitle: "Sobre nosotros",
@@ -87,7 +87,7 @@ export const es = {
       "Situada en Merzouga, al pie del Erg Chebbi, nuestra casa se abre a dunas infinitas y atardeceres inolvidables.",
   },
   contact: {
-    metaTitle: "Contacto | Casa de huéspedes en Merzouga",
+    metaTitle: "Contacto y reserva | Casa de huéspedes Merzouga – Dar Shifa Shanti",
     metaDesc: "Contacte Dar Shifa Shanti en Merzouga para reservar su estancia.",
     heroTitle: "Contacto",
     heroText: "Estamos aquí para preparar su estancia.",
@@ -98,7 +98,7 @@ export const es = {
     whatsapp: "Escribir por WhatsApp",
   },
   blog: {
-    metaTitle: "Blog Merzouga y Erg Chebbi | Consejos de viaje",
+    metaTitle: "Desierto Merzouga Mapa | Guías – Dar Shifa Shanti",
     metaDesc: "Guías y consejos para visitar Merzouga y el Erg Chebbi.",
     heroTitle: "Blog",
     heroText: "Consejos, temporadas y experiencias alrededor de Merzouga.",

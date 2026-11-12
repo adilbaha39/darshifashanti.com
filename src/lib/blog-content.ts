@@ -49,8 +49,8 @@ export const articles: BlogArticle[] = [
       es: "Guía práctica",
     },
     title: {
-      fr: "Guide complet pour visiter Merzouga",
-      en: "Complete guide to visiting Merzouga",
+      fr: "Dunes de Merzouga | Visiter – Dar Shifa Shanti",
+      en: "Bivouac à Merzouga | Visit the Desert – Dar Shifa Shanti",
       ar: "دليل شامل لزيارة مرزوكة",
       es: "Guía completa para visitar Merzouga",
     },
@@ -244,8 +244,8 @@ export const articles: BlogArticle[] = [
       es: "Temporadas",
     },
     title: {
-      fr: "Quelle est la meilleure période pour aller à l'Erg Chebbi ?",
-      en: "What is the best time to visit Erg Chebbi?",
+      fr: "Meilleure période pour visiter l'Erg Chebbi et Merzouga",
+      en: "Best Time to Visit Erg Chebbi and Merzouga Desert",
       ar: "ما هي أفضل فترة لزيارة إرغ شبي؟",
       es: "¿Cuál es la mejor época para ir al Erg Chebbi?",
     },
@@ -256,7 +256,7 @@ export const articles: BlogArticle[] = [
       es: "¿Primavera, otoño, invierno o verano? Descubra la temporada ideal para visitar las dunas de Merzouga según sus gustos y su tolerancia al calor.",
     },
     metaDescription: {
-      fr: "Meilleure saison pour visiter l'Erg Chebbi et Merzouga : températures, foule et conseils par période.",
+      fr: "Quelle saison choisir pour le désert de Merzouga et l'Erg Chebbi ? Températures, foule et conseils par période pour bien planifier votre séjour.",
       en: "Best season to visit Erg Chebbi and Merzouga: temperatures, crowds and tips by period.",
       ar: "أفضل موسم لزيارة إرغ شبي ومرزوكة: درجات الحرارة والازدحام ونصائح حسب الفترة.",
       es: "Mejor temporada para visitar el Erg Chebbi y Merzouga: temperaturas, afluencia y consejos por periodo.",
@@ -435,8 +435,8 @@ export const articles: BlogArticle[] = [
       es: "Experiencia",
     },
     title: {
-      fr: "Nuit dans le désert : ce qu'il faut savoir",
-      en: "A night in the desert: what you need to know",
+      fr: "Bivouac à Merzouga | Nuit dans le désert – Dar Shifa Shanti",
+      en: "Merzouga Desert Camps | Night in the Desert – Dar Shifa Shanti",
       ar: "ليلة في الصحراء: ما يجب أن تعرفه",
       es: "Noche en el desierto: lo que debe saber",
     },
@@ -447,7 +447,7 @@ export const articles: BlogArticle[] = [
       es: "Pasar una noche bajo las estrellas del Sáhara es una experiencia única. Así se prepara y lo que realmente vivirá.",
     },
     metaDescription: {
-      fr: "Préparer une nuit dans le désert à Merzouga : bivouac, température, que prévoir et conseils pratiques.",
+      fr: "Préparer une nuit dans le désert de Merzouga : bivouac, température, que prévoir et conseils pratiques près de l'Erg Chebbi.",
       en: "Prepare for a night in the desert in Merzouga: camp, temperature, what to pack and practical tips.",
       ar: "التحضير لليلة في صحراء مرزوكة: المخيم، الحرارة، ماذا تحضر ونصائح عملية.",
       es: "Preparar una noche en el desierto en Merzouga: campamento, temperatura, qué llevar y consejos prácticos.",
@@ -626,8 +626,8 @@ export const articles: BlogArticle[] = [
       es: "Guía práctica",
     },
     title: {
-      fr: "Où manger à Merzouga : 7 restaurants à tester",
-      en: "Where to eat in Merzouga: 7 restaurant types to try",
+      fr: "Où manger à Merzouga | Restaurants et cuisine locale",
+      en: "Where to Eat in Merzouga | Local Restaurants & Food",
       ar: "أين تأكل في مرزوكة: 7 أنواع مطاعم للتجربة",
       es: "Dónde comer en Merzouga: 7 tipos de restaurantes",
     },
@@ -638,7 +638,7 @@ export const articles: BlogArticle[] = [
       es: "¿Dónde comer en Merzouga sin trampas para turistas? Criterios prácticos, tipos de locales, platos locales y consejos de presupuesto cerca del Erg Chebbi.",
     },
     metaDescription: {
-      fr: "Où manger à Merzouga quand on dort en maison d'hôtes ? Repérez les meilleurs restaurants Merzouga et savourez la cuisine locale. Réservez.",
+      fr: "Où manger à Merzouga sans piège à touristes ? Critères, profils d'adresses, plats locaux et conseils près de l'Erg Chebbi et de votre maison d'hôtes.",
       en: "Where to eat in Merzouga when staying in a guesthouse? Find reliable restaurants and local cuisine near Erg Chebbi. Book your stay.",
       ar: "أين تأكل في مرزوكة أثناء إقامتك في دار ضيافة؟ اكتشف المطاعم الموثوقة والمطبخ المحلي قرب إرغ شبي.",
       es: "¿Dónde comer en Merzouga si se aloja en una casa de huéspedes? Descubra restaurantes fiables y cocina local cerca del Erg Chebbi.",
