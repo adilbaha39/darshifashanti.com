@@ -224,8 +224,6 @@ export const services: Service[] = [
       es: "Contáctenos por WhatsApp o en la página de contacto. Los precios también están en Google Maps.",
     },
   },
-
-  ,
   {
     slug: "bivouac",
     image: "/images/campfire.webp",
